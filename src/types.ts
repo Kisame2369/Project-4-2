@@ -1,11 +1,10 @@
  export interface PhotoCollection {
-    id: number;
+   id: string;
     user: {
       name: string;
     };
-    description: string;
    likes: number;
-   alt_description: string;
+   alt_description: string | null;
     urls: {
       regular: string;
       small: string;
