@@ -11,7 +11,7 @@ const instance = axios.create({
 });
 
 export const fetchImages = async (topic:string, currentPage = 1): Promise<Topic> => {
-  const response = await instance.get('/search/photos', {
+  const response = await instance.get<Topic>('/search/photos', {
     params: {
       query: topic,
       page: currentPage,
