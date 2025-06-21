@@ -4,7 +4,7 @@
       name: string;
     };
    likes: number;
-   alt_description: string | null;
+   alt_description: string;
     urls: {
       regular: string;
       small: string;

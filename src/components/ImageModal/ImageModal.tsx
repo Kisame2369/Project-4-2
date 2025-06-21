@@ -30,7 +30,7 @@ function ImageModal({ isOpen, onClose, image }: ImageModalProps) {
     >
       <img
         src={image.urls.regular}
-        alt={image.alt_description || "Image"}
+        alt={image.alt_description}
         style={{ width: "100%" }}
       />
     </Modal>
